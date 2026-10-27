@@ -1,0 +1,143 @@
+{
+  "ok": true,
+  "host": "isolated DSH 0.2.0-rc.2",
+  "browser": "disposable Edge",
+  "report": [
+    {
+      "width": 1440,
+      "height": 900,
+      "mode": "light",
+      "theme": "nahida-maya",
+      "dark": false,
+      "overflow": false,
+      "composer": {
+        "x": 469.296875,
+        "y": 511,
+        "width": 774.390625,
+        "height": 116,
+        "top": 511,
+        "right": 1243.6875,
+        "bottom": 627,
+        "left": 469.296875
+      },
+      "sceneArt": true,
+      "portrait": true,
+      "styles": 1
+    },
+    {
+      "width": 960,
+      "height": 720,
+      "mode": "light",
+      "theme": "nahida-maya",
+      "dark": false,
+      "overflow": false,
+      "composer": {
+        "x": 148.5,
+        "y": 402,
+        "width": 712,
+        "height": 116,
+        "top": 402,
+        "right": 860.5,
+        "bottom": 518,
+        "left": 148.5
+      },
+      "sceneArt": true,
+      "portrait": true,
+      "styles": 1
+    },
+    {
+      "width": 480,
+      "height": 720,
+      "mode": "light",
+      "theme": "nahida-maya",
+      "dark": false,
+      "overflow": false,
+      "composer": {
+        "x": 72,
+        "y": 410,
+        "width": 385,
+        "height": 116,
+        "top": 410,
+        "right": 457,
+        "bottom": 526,
+        "left": 72
+      },
+      "sceneArt": true,
+      "portrait": true,
+      "styles": 1
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "mode": "dark",
+      "theme": "nahida-maya",
+      "dark": true,
+      "overflow": false,
+      "composer": {
+        "x": 469.296875,
+        "y": 511,
+        "width": 774.390625,
+        "height": 116,
+        "top": 511,
+        "right": 1243.6875,
+        "bottom": 627,
+        "left": 469.296875
+      },
+      "sceneArt": true,
+      "portrait": true,
+      "styles": 1
+    },
+    {
+      "width": 960,
+      "height": 720,
+      "mode": "dark",
+      "theme": "nahida-maya",
+      "dark": true,
+      "overflow": false,
+      "composer": {
+        "x": 148.5,
+        "y": 402,
+        "width": 712,
+        "height": 116,
+        "top": 402,
+        "right": 860.5,
+        "bottom": 518,
+        "left": 148.5
+      },
+      "sceneArt": true,
+      "portrait": true,
+      "styles": 1
+    },
+    {
+      "width": 480,
+      "height": 720,
+      "mode": "dark",
+      "theme": "nahida-maya",
+      "dark": true,
+      "overflow": false,
+      "composer": {
+        "x": 72,
+        "y": 410,
+        "width": 385,
+        "height": 116,
+        "top": 410,
+        "right": 457,
+        "bottom": 526,
+        "left": 72
+      },
+      "sceneArt": true,
+      "portrait": true,
+      "styles": 1
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "installed desktop Host render",
+    "first-use automatic activation",
+    "live system color scheme",
+    "responsive welcome canvas",
+    "settings card",
+    "restore across reload",
+    "re-enable"
+  ]
+}

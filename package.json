@@ -1,0 +1,46 @@
+{
+  "name": "@local/dsh-theme-nahida",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "纳西妲 · 摩耶之殿。独立 DSH 主题，原版游戏素材、草元素装饰、浅色与深色随外观切换。启用即生效。",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "CH3SH-LC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CH3SH-LC/dsh-theme-nahida.git"
+  },
+  "homepage": "https://github.com/CH3SH-LC/dsh-theme-nahida#readme",
+  "bugs": { "url": "https://github.com/CH3SH-LC/dsh-theme-nahida/issues" },
+  "keywords": ["deepseek-harness", "deepseek", "dsh", "dsh-plugin", "theme", "nahida", "genshin-impact"],
+  "engines": { "node": ">=22.0.0" },
+  "main": "./index.js",
+  "icon": "./assets/skandha-game.png",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./dist/client.js",
+    "./package.json": "./package.json",
+    "./locale/*": "./locale/*"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node tests/runtime.mjs",
+    "check": "node build.mjs && node tests/runtime.mjs && node scripts/check-package.mjs"
+  },
+  "files": [
+    "index.js", "cordis.patch.yml", "dist", "src", "assets", "theme.css",
+    "build.mjs", "README.md", "README.en.md", "LICENSE", "ARTWORK.md", "locale"
+  ]
+}

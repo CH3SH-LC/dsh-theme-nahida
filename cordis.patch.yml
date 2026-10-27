@@ -1,0 +1,6 @@
+- insert:
+    - id: theme-nahida
+      name: '@local/dsh-theme-nahida'
+      config:
+        enabled: true
+        decorations: true

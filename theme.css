@@ -1,0 +1,686 @@
+/* 纳西妲 · 摩耶之殿 — authored by scripts/redesign.mjs. Native adapter: DSH 0.2.0-rc.2. */
+body[data-ds-theme="nahida-maya"] {
+  --dsw-static-neutral-bluish-00: #ffffff;
+  --dsw-static-neutral-bluish-50: #fbfaf3;
+  --dsw-static-neutral-bluish-60: #fbfaf3;
+  --dsw-static-neutral-bluish-75: #f5f2e7;
+  --dsw-static-neutral-bluish-100: #efeade;
+  --dsw-static-neutral-bluish-150: #e8e2d3;
+  --dsw-static-neutral-bluish-200: #e8e2d3;
+  --dsw-static-neutral-bluish-300: #caccc5;
+  --dsw-static-neutral-bluish-400: #a7aba3;
+  --dsw-static-neutral-bluish-500: #91968e;
+  --dsw-static-neutral-bluish-600: #7f867d;
+  --dsw-static-neutral-bluish-700: #888e85;
+  --dsw-static-neutral-bluish-750: #e8e2d3;
+  --dsw-static-neutral-bluish-800: #e8e2d3;
+  --dsw-static-neutral-bluish-850: #efeade;
+  --dsw-static-neutral-bluish-875: #efeade;
+  --dsw-static-neutral-bluish-900: #f5f2e7;
+  --dsw-static-neutral-bluish-950: #f5f2e7;
+  --dsw-static-neutral-bluish-1000: #1e2a20;
+  --dsw-static-neutral-50: #fbfaf3;
+  --dsw-static-neutral-100: #f5f2e7;
+  --dsw-static-neutral-200: #efeade;
+  --dsw-static-neutral-300: #e8e2d3;
+  --dsw-static-neutral-800: #efeade;
+  --dsw-static-neutral-850: #efeade;
+  --dsw-static-neutral-1000: #1e2a20;
+  --dsw-static-green-400: #629b71;
+  --dsw-static-green-500: #2d7a41;
+  --dsw-static-green-100: #e2ebde;
+  --dsw-static-green-900: #dee8da;
+  --dsw-static-green-500-a08: #2d7a4114;
+  --dsw-static-green-500-a12: #2d7a411f;
+  --dsw-static-red-50: #f6eee7;
+  --dsw-static-red-100: #f3e6df;
+  --dsw-static-red-400: #b7504d;
+  --dsw-static-red-500: #a92f2b;
+  --dsw-static-red-600: #a92f2b;
+  --dsw-static-red-400-a12: #a92f2b1f;
+  --dsw-static-red-600-a08: #a92f2b14;
+  --dsw-static-amber-100: #f0eadd;
+  --dsw-static-amber-400: #a6824b;
+  --dsw-static-amber-500: #8a5a12;
+  --dsw-static-amber-600: #8a5a12;
+  --dsw-static-amber-900: #ede7d8;
+  --dsw-static-blue-500: #2f7d46;
+  --dsw-static-blue-300: #86b494;
+  --dsw-static-blue-400: #619c72;
+  --dsw-static-blue-450: #549467;
+  --dsw-static-blue-600: #286c3c;
+  --dsw-static-blue-800: #215831;
+  --dsw-static-blue-900: #215831;
+  --dsw-static-blue-950: #215831;
+  --dsw-static-blue-100: #ebf0e5;
+  --dsw-static-blue-50: #dee9db;
+  --dsw-static-blue-50p: #dee9db;
+  --dsw-static-blue-75: #dee9db;
+  --dsw-static-deepseek-500: #2f7d46;
+  --dsw-static-deepseek-450: #549467;
+  --dsw-static-deepseek-400: #619c72;
+  --dsw-static-deepseek-300: #86b494;
+  --dsw-static-deepseek-200: #ebf0e5;
+  --dsw-static-deepseek-100: #dee9db;
+  --dsw-static-deepseek-50: #dee9db;
+  --dsw-static-deepseek-600: #286c3c;
+  --dsw-static-deepseek-700-delete: #215831;
+  --dsw-static-deepseek-800: #215831;
+  --dsw-static-deepseek-900: #215831;
+  --dsw-static-neutral-00: #ffffff;
+  --dsw-static-neutral-400: #a3a79f;
+  --dsw-static-neutral-500: #888e85;
+  --dsw-static-neutral-550: #888e85;
+  --dsw-static-neutral-600: #5a6259;
+  --dsw-static-neutral-700: #5a6259;
+  --dsw-static-neutral-150: #e8e2d3;
+  --dsw-static-neutral-250: #e8e2d3;
+  --dsw-static-neutral-900: #fbfaf3;
+  --dsw-alias-bg-base: #FCFCF7;
+  --dsw-alias-bg-layer-1: #F4F5EC;
+  --dsw-alias-bg-layer-2: #E9EFDE;
+  --dsw-alias-bg-layer-3: #E9EFDE;
+  --dsw-alias-bg-overlay: #F4F5EC;
+  --dsw-alias-bg-module-platform: #E9EFDE;
+  --dsw-alias-bg-multi-select: #E9EFDE;
+  --dsw-alias-bg-skeleton: #0000000a;
+  --dsw-alias-bg-mask-1: #0000003d;
+  --dsw-alias-bg-mask-2: #0000001f;
+  --dsw-alias-bg-mask-3: #0000007a;
+  --dsw-alias-bg-mask-drop: #ffffffb8;
+  --dsw-alias-bg-mask-photo: #000000e0;
+  --dsw-alias-bg-document-preview: #F4F5EC;
+  --dsw-alias-bg-document-selection: #2f7d4638;
+  --dsw-alias-label-document-preview: #2C4039;
+  --dsw-alias-border-l1: #DCE3D0;
+  --dsw-alias-border-l2: #DCE3D0;
+  --dsw-alias-border-l3: #DCE3D0;
+  --dsw-alias-border-l4: #DCE3D0;
+  --dsw-alias-border-l2-darkmode-thin: #DCE3D0;
+  --dsw-alias-border-inverted: #00000000;
+  --dsw-alias-border-inverted2: #00000000;
+  --dsw-alias-brand-primary: #3E7157;
+  --dsw-alias-brand-primary-invert: #2C4039;
+  --dsw-alias-brand-primary-new-colorprimary-new-color: #3E7157;
+  --dsw-alias-brand-text: #2C4039;
+  --dsw-alias-label-primary: #2C4039;
+  --dsw-alias-label-secondary: #596E60;
+  --dsw-alias-label-tertiary: #5E705E;
+  --dsw-alias-label-caption: #5E705E;
+  --dsw-alias-label-dimmed: #cfd0c9;
+  --dsw-alias-label-primary-dimmed: #2C4039;
+  --dsw-alias-label-primary-bluish: #3E7157;
+  --dsw-alias-label-primary-inverted: #FFFFFF;
+  --dsw-alias-label-primary-foreground: #FFFFFF;
+  --dsw-alias-label-shimmer: #1e2a2038;
+  --dsw-alias-label-deep-diving: #3E7157;
+  --dsw-alias-label-deep-diving-shimmer: #2D5942;
+  --dsw-alias-link: #3E7157;
+  --dsw-alias-menu-icon: #596E60;
+  --dsw-alias-button-primary-fill: #3E7157;
+  --dsw-alias-button-primary-hover: #2D5942;
+  --dsw-alias-button-primary-dimmed: #E2EDD9;
+  --dsw-alias-button-info-fill: #3E7157;
+  --dsw-alias-button-info-hover: #2D5942;
+  --dsw-alias-button-contrast-fill: #1e2a20;
+  --dsw-alias-button-elevated-fill: #F4F5EC;
+  --dsw-alias-button-floating-fill: #f5f2e7;
+  --dsw-alias-button-floating-hover: #f3f0e5;
+  --dsw-alias-button-ghost-active-fill: #E2EDD9;
+  --dsw-alias-button-ghost-active-hover: #f3f0e5;
+  --dsw-alias-button-ghost-active-border: #2f7d46;
+  --dsw-alias-button-tool-bar-fill: #1e2a2057;
+  --dsw-alias-button-tool-bar-fill-invisible: #00000000;
+  --dsw-alias-button-tool-bar-hover: #1e2a2070;
+  --dsw-alias-interactive-bg-hover: #E2EDD9;
+  --dsw-alias-interactive-bg-hover-solid: #FFFFFB;
+  --dsw-alias-interactive-bg-active: #E2EDD9;
+  --dsw-alias-interactive-bg-hover-accent: #E2EDD9;
+  --dsw-alias-interactive-bg-hover-danger: #a92f2b1a;
+  --dsw-alias-state-business-primary: #3E7157;
+  --dsw-alias-state-business-tertiary: #E2EDD9;
+  --dsw-alias-state-error-primary: #a92f2b;
+  --dsw-alias-state-error-secondary: #b34743;
+  --dsw-alias-state-success-primary: #2d7a41;
+  --dsw-alias-state-success-secondary: #428753;
+  --dsw-alias-state-success-tertiary: #e2ebde;
+  --dsw-alias-state-warn-label: #8a5a12;
+  --dsw-alias-state-warn-primary: #8a5a12;
+  --dsw-alias-state-warn-secondary: #936724;
+  --dsw-alias-state-warn-tertiary: #f0eadd;
+  --dsw-alias-state-idle-primary: #5E705E;
+  --dsw-alias-markdown-code-block: #FFFFFB;
+  --dsw-alias-markdown-code-block-banner: #e8e2d3;
+  --dsw-alias-markdown-code-segment-selected: #f5f2e7;
+  --dsw-alias-markdown-code-segment-unselected: #efeade;
+  --dsw-alias-markdown-inline-code: #efeade;
+  --dsw-alias-markdown-citation: #dee9db;
+  --dsw-alias-markdown-tag: #f0f4e7;
+  --dsw-alias-markdown-placeholder: #e8e2d3;
+  --dsw-specific-bubble: #dee9db;
+  --dsw-specific-bubble-highlight: #ebf0e5;
+  --dsw-specific-input-major: #FFFFFB;
+  --dsw-specific-login-input: #FFFFFB;
+  --dsw-specific-sidebar-fill: #F0F3E7;
+  --dsw-specific-sidebar-nav-item-hover: #e2e1db4d;
+  --dsw-specific-sidebar-nav-item-active: #dee9db;
+  --dsw-specific-sidebar-nav-item-active-accent: #ebf0e5;
+  --dsw-specific-selector: #efeade;
+  --dsw-specific-tip: #efeade;
+  --dsw-specific-menu: #FFFFFB;
+  --dsw-alias-tooltip-bg: #222e24;
+  --dsw-alias-tooltip-key-bg: #4a544b;
+  --dsw-alias-toast-bg: #273228;
+  --dsw-alias-toast-label: #ffffff;
+  --dsw-alias-switch-thumb: #ffffff;
+  --dsw-alias-turn-trigger-bg: #efeade;
+  --dsw-alias-turn-trigger-bg-hover: #e8e2d3;
+  --dsw-menu-surface-fill: #fffffff0;
+  --dsw-menu-backdrop-filter: blur(18px) saturate(140%);
+  --dsw-alias-menu-group-header-fill: #fffffff0;
+  --dsw-alias-scrollbar-bg-l1: #1e2a2024;
+  --dsw-alias-scrollbar-bg-l2: #DCE3D0;
+  --dsw-alias-scrollbar-hover-l1: #1e2a2042;
+  --dsw-alias-scrollbar-hover-l2: #5E705E;
+  --dsw-elevation-stroke-color: #e2e1db8c;
+  --dsw-elevation-stroke: 0 0 0 0.5px #e2e1db8c;
+  --dsw-elevation-panel: 0 0 0 0.5px #e2e1db8c, 0 2px 6px #5f5f5c1a;
+  --dsw-elevation-prominent: 0 0 0 0.5px #d3d2ccbf, 0 4px 12px #5f5f5c24;
+  --dsw-elevation-soft: 0 0 0 0.5px #e2e1db8c, 0 6px 18px #5f5f5c14;
+  --dsw-shadow-lv1: 0 1px 2px 0 rgba(0,0,0,0.08);
+  --dsw-shadow-lv1-blur: 0 2px 6px 0 rgba(0,0,0,0.06);
+  --dsw-shadow-lv2: 0 2px 8px 0 rgba(0,0,0,0.06), 0 1px 2px 0 rgba(0,0,0,0.08);
+  --dsw-shadow-lv3: 0 6px 18px 0 rgba(0,0,0,0.10), 0 1px 2px 0 rgba(0,0,0,0.08);
+  --dsw-linear-gradient-think: linear-gradient(180deg, #fbfaf300 0%, #fbfaf38c 100%);
+  --dsw-linear-think-select: linear-gradient(180deg, #efeadee6 0%, #efeade00 100%);
+  --dsw-mask-blur: none;
+  --dsw-corner-shape: superellipse(1.6);
+  --dsw-gradient-onboarding-blue-stops: #2f7d46 18.75%, #286c3c 51.78%, #8fbf7a 86.252%, #2f7d46;
+  --dsw-gradient-onboarding-cyan-stops: #8fbf7a 21.154%, #dee9db 50.954%, #ebf0e5 85.326%, #8fbf7a;
+  --dsw-gradient-onboarding-violet-stops: #215831 33.102%, #2f7d46 50.954%, #ebf0e5 85.326%, #215831;
+  --dsw-alias-code-diff-added: #2d7a4124;
+  --dsw-alias-code-diff-deleted: #a92f2b21;
+  --dsw-alias-file-diff-added-bg: #e6ede1;
+  --dsw-alias-file-diff-added-gutter: #eff2e8;
+  --dsw-alias-file-diff-added-marker: #2d7a41;
+  --dsw-alias-file-diff-deleted-bg: #f4e8e1;
+  --dsw-alias-file-diff-deleted-gutter: #f6eee7;
+  --dsw-alias-file-diff-deleted-marker: #a92f2b;
+  --dsw-specific-input-minor: #FFFFFB;
+  --dsw-alias-settings-card-fill: #FFFFFB;
+  --dsw-alias-md-codeblock-background: #FFFFFB;
+  --dsw-alias-settings-card-stroke: #DCE3D0;
+  --dsw-specific-button-primary-fill: #3E7157;
+  --dsw-specific-button-primary-text: #FFFFFF;
+  --dsw-specific-chat-bubble-user-fill: #E2EDD9;
+  --dsw-specific-user-message-fill: #E2EDD9;
+  --atelier-bg: #FCFCF7;
+  --atelier-side: #F0F3E7;
+  --atelier-card: #FFFFFB;
+  --atelier-ink: #2C4039;
+  --atelier-sub: #596E60;
+  --atelier-muted: #5E705E;
+  --atelier-brand: #3E7157;
+  --atelier-soft: #E2EDD9;
+  --atelier-line: #DCE3D0;
+  --atelier-gold: #9A7A3F;
+  --atelier-shadow: 0 8px 32px #4353370D;
+}
+body[data-ds-theme="nahida-maya"][data-ds-dark-theme] {
+  --dsw-static-neutral-bluish-00: #223026;
+  --dsw-static-neutral-bluish-50: #1c2820;
+  --dsw-static-neutral-bluish-60: #1c2820;
+  --dsw-static-neutral-bluish-75: #1c2820;
+  --dsw-static-neutral-bluish-100: #1c2820;
+  --dsw-static-neutral-bluish-150: #1c2820;
+  --dsw-static-neutral-bluish-200: #172019;
+  --dsw-static-neutral-bluish-300: #ffffff29;
+  --dsw-static-neutral-bluish-400: #626a62;
+  --dsw-static-neutral-bluish-500: #777f76;
+  --dsw-static-neutral-bluish-600: #889087;
+  --dsw-static-neutral-bluish-700: #889087;
+  --dsw-static-neutral-bluish-750: #223026;
+  --dsw-static-neutral-bluish-800: #223026;
+  --dsw-static-neutral-bluish-850: #1c2820;
+  --dsw-static-neutral-bluish-875: #1c2820;
+  --dsw-static-neutral-bluish-900: #172019;
+  --dsw-static-neutral-bluish-950: #111813;
+  --dsw-static-neutral-bluish-1000: #e6efe2;
+  --dsw-static-neutral-50: #111813;
+  --dsw-static-neutral-100: #172019;
+  --dsw-static-neutral-200: #1c2820;
+  --dsw-static-neutral-300: #223026;
+  --dsw-static-neutral-800: #1c2820;
+  --dsw-static-neutral-850: #1c2820;
+  --dsw-static-neutral-1000: #e6efe2;
+  --dsw-static-green-400: #93dba8;
+  --dsw-static-green-500: #6fcf8b;
+  --dsw-static-green-100: #284430;
+  --dsw-static-green-900: #223026;
+  --dsw-static-green-500-a08: #6fcf8b14;
+  --dsw-static-green-500-a12: #6fcf8b1f;
+  --dsw-static-red-50: #1e1e19;
+  --dsw-static-red-100: #402d27;
+  --dsw-static-red-400: #ec8d86;
+  --dsw-static-red-500: #e8776f;
+  --dsw-static-red-600: #e8776f;
+  --dsw-static-red-400-a12: #e8776f1f;
+  --dsw-static-red-600-a08: #e8776f14;
+  --dsw-static-amber-100: #3f3a24;
+  --dsw-static-amber-400: #e7c486;
+  --dsw-static-amber-500: #e0b160;
+  --dsw-static-amber-600: #e0b160;
+  --dsw-static-amber-900: #223026;
+  --dsw-static-blue-500: #7cc98a;
+  --dsw-static-blue-300: #b3e0bb;
+  --dsw-static-blue-400: #9bd6a6;
+  --dsw-static-blue-450: #94d39f;
+  --dsw-static-blue-600: #94d39f;
+  --dsw-static-blue-800: #a9dbb2;
+  --dsw-static-blue-900: #a9dbb2;
+  --dsw-static-blue-950: #a9dbb2;
+  --dsw-static-blue-100: #223426;
+  --dsw-static-blue-50: #2f4a34;
+  --dsw-static-blue-50p: #2f4a34;
+  --dsw-static-blue-75: #2f4a34;
+  --dsw-static-deepseek-500: #7cc98a;
+  --dsw-static-deepseek-450: #94d39f;
+  --dsw-static-deepseek-400: #9bd6a6;
+  --dsw-static-deepseek-300: #b3e0bb;
+  --dsw-static-deepseek-200: #223426;
+  --dsw-static-deepseek-100: #2f4a34;
+  --dsw-static-deepseek-50: #2f4a34;
+  --dsw-static-deepseek-600: #94d39f;
+  --dsw-static-deepseek-700-delete: #a9dbb2;
+  --dsw-static-deepseek-800: #a9dbb2;
+  --dsw-static-deepseek-900: #a9dbb2;
+  --dsw-static-neutral-00: #ffffff;
+  --dsw-static-neutral-400: #6f776e;
+  --dsw-static-neutral-500: #889087;
+  --dsw-static-neutral-550: #889087;
+  --dsw-static-neutral-600: #a6afa4;
+  --dsw-static-neutral-700: #a6afa4;
+  --dsw-static-neutral-150: #223026;
+  --dsw-static-neutral-250: #223026;
+  --dsw-static-neutral-900: #172019;
+  --dsw-alias-bg-base: #141F1C;
+  --dsw-alias-bg-layer-1: #1D3028;
+  --dsw-alias-bg-layer-2: #293D32;
+  --dsw-alias-bg-layer-3: #293D32;
+  --dsw-alias-bg-overlay: #1D3028;
+  --dsw-alias-bg-module-platform: #293D32;
+  --dsw-alias-bg-multi-select: #293D32;
+  --dsw-alias-bg-skeleton: #ffffff14;
+  --dsw-alias-bg-mask-1: #0000009e;
+  --dsw-alias-bg-mask-2: #00000066;
+  --dsw-alias-bg-mask-3: #0000007a;
+  --dsw-alias-bg-mask-drop: #223026d9;
+  --dsw-alias-bg-mask-photo: #000000e0;
+  --dsw-alias-bg-document-preview: #1D3028;
+  --dsw-alias-bg-document-selection: #7cc98a38;
+  --dsw-alias-label-document-preview: #E7EEDD;
+  --dsw-alias-border-l1: #3C5042;
+  --dsw-alias-border-l2: #3C5042;
+  --dsw-alias-border-l3: #3C5042;
+  --dsw-alias-border-l4: #3C5042;
+  --dsw-alias-border-l2-darkmode-thin: #3C5042;
+  --dsw-alias-border-inverted: #ffffff14;
+  --dsw-alias-border-inverted2: #ffffff1f;
+  --dsw-alias-brand-primary: #ACD99A;
+  --dsw-alias-brand-primary-invert: #E7EEDD;
+  --dsw-alias-brand-primary-new-colorprimary-new-color: #ACD99A;
+  --dsw-alias-brand-text: #E7EEDD;
+  --dsw-alias-label-primary: #E7EEDD;
+  --dsw-alias-label-secondary: #B5C6B8;
+  --dsw-alias-label-tertiary: #99B2A0;
+  --dsw-alias-label-caption: #99B2A0;
+  --dsw-alias-label-dimmed: #485049;
+  --dsw-alias-label-primary-dimmed: #E7EEDD;
+  --dsw-alias-label-primary-bluish: #ACD99A;
+  --dsw-alias-label-primary-inverted: #141F1C;
+  --dsw-alias-label-primary-foreground: #141F1C;
+  --dsw-alias-label-shimmer: #ffffff57;
+  --dsw-alias-label-deep-diving: #ACD99A;
+  --dsw-alias-label-deep-diving-shimmer: #C8E9B7;
+  --dsw-alias-link: #ACD99A;
+  --dsw-alias-menu-icon: #B5C6B8;
+  --dsw-alias-button-primary-fill: #507D5F;
+  --dsw-alias-button-primary-hover: #C8E9B7;
+  --dsw-alias-button-primary-dimmed: #314C37;
+  --dsw-alias-button-info-fill: #507D5F;
+  --dsw-alias-button-info-hover: #C8E9B7;
+  --dsw-alias-button-contrast-fill: #e6efe2;
+  --dsw-alias-button-elevated-fill: #1D3028;
+  --dsw-alias-button-floating-fill: #172019;
+  --dsw-alias-button-floating-hover: #223026;
+  --dsw-alias-button-ghost-active-fill: #314C37;
+  --dsw-alias-button-ghost-active-hover: #223026;
+  --dsw-alias-button-ghost-active-border: #7cc98a;
+  --dsw-alias-button-tool-bar-fill: #e6efe257;
+  --dsw-alias-button-tool-bar-fill-invisible: #00000000;
+  --dsw-alias-button-tool-bar-hover: #e6efe270;
+  --dsw-alias-interactive-bg-hover: #314C37;
+  --dsw-alias-interactive-bg-hover-solid: #1C2D26;
+  --dsw-alias-interactive-bg-active: #314C37;
+  --dsw-alias-interactive-bg-hover-accent: #314C37;
+  --dsw-alias-interactive-bg-hover-danger: #e8776f33;
+  --dsw-alias-state-business-primary: #ACD99A;
+  --dsw-alias-state-business-tertiary: #314C37;
+  --dsw-alias-state-error-primary: #e8776f;
+  --dsw-alias-state-error-secondary: #c1665e;
+  --dsw-alias-state-success-primary: #6fcf8b;
+  --dsw-alias-state-success-secondary: #60b278;
+  --dsw-alias-state-success-tertiary: #284430;
+  --dsw-alias-state-warn-label: #e0b160;
+  --dsw-alias-state-warn-primary: #e0b160;
+  --dsw-alias-state-warn-secondary: #c39c55;
+  --dsw-alias-state-warn-tertiary: #3f3a24;
+  --dsw-alias-state-idle-primary: #99B2A0;
+  --dsw-alias-markdown-code-block: #1C2D26;
+  --dsw-alias-markdown-code-block-banner: #223026;
+  --dsw-alias-markdown-code-segment-selected: #172019;
+  --dsw-alias-markdown-code-segment-unselected: #1c2820;
+  --dsw-alias-markdown-inline-code: #1c2820;
+  --dsw-alias-markdown-citation: #2f4a34;
+  --dsw-alias-markdown-tag: #1f3024;
+  --dsw-alias-markdown-placeholder: #223026;
+  --dsw-specific-bubble: #2f4a34;
+  --dsw-specific-bubble-highlight: #223426;
+  --dsw-specific-input-major: #1C2D26;
+  --dsw-specific-login-input: #1C2D26;
+  --dsw-specific-sidebar-fill: #192923;
+  --dsw-specific-sidebar-nav-item-hover: #ffffff0f;
+  --dsw-specific-sidebar-nav-item-active: #2f4a34;
+  --dsw-specific-sidebar-nav-item-active-accent: #223426;
+  --dsw-specific-selector: #1c2820;
+  --dsw-specific-tip: #1c2820;
+  --dsw-specific-menu: #1C2D26;
+  --dsw-alias-tooltip-bg: #223026;
+  --dsw-alias-tooltip-key-bg: #4a554d;
+  --dsw-alias-toast-bg: #223026;
+  --dsw-alias-toast-label: #ffffff;
+  --dsw-alias-switch-thumb: #a6afa4;
+  --dsw-alias-turn-trigger-bg: #1c2820;
+  --dsw-alias-turn-trigger-bg-hover: #223026;
+  --dsw-menu-surface-fill: #223026eb;
+  --dsw-menu-backdrop-filter: blur(18px) saturate(140%);
+  --dsw-alias-menu-group-header-fill: #1c2820f0;
+  --dsw-alias-scrollbar-bg-l1: #e6efe22e;
+  --dsw-alias-scrollbar-bg-l2: #3C5042;
+  --dsw-alias-scrollbar-hover-l1: #e6efe24d;
+  --dsw-alias-scrollbar-hover-l2: #99B2A0;
+  --dsw-elevation-stroke-color: #ffffff1a;
+  --dsw-elevation-stroke: 0 0 0 0.5px #ffffff1a;
+  --dsw-elevation-panel: 0 0 0 0.5px #ffffff1a, 0 2px 6px #0000001a;
+  --dsw-elevation-prominent: 0 0 0 0.5px #ffffff29, 0 4px 12px #00000024;
+  --dsw-elevation-soft: 0 0 0 0.5px #ffffff1a, 0 6px 18px #00000014;
+  --dsw-shadow-lv1: 0 1px 2px 0 rgba(0,0,0,0.08);
+  --dsw-shadow-lv1-blur: 0 2px 6px 0 rgba(0,0,0,0.06);
+  --dsw-shadow-lv2: 0 2px 8px 0 rgba(0,0,0,0.06), 0 1px 2px 0 rgba(0,0,0,0.08);
+  --dsw-shadow-lv3: 0 6px 18px 0 rgba(0,0,0,0.10), 0 1px 2px 0 rgba(0,0,0,0.08);
+  --dsw-linear-gradient-think: linear-gradient(180deg, #11181300 0%, #1118138c 100%);
+  --dsw-linear-think-select: linear-gradient(180deg, #1c2820e6 0%, #1c282000 100%);
+  --dsw-mask-blur: none;
+  --dsw-corner-shape: superellipse(1.6);
+  --dsw-gradient-onboarding-blue-stops: #7cc98a 18.75%, #94d39f 51.78%, #5f9e6f 86.252%, #7cc98a;
+  --dsw-gradient-onboarding-cyan-stops: #5f9e6f 21.154%, #2f4a34 50.954%, #223426 85.326%, #5f9e6f;
+  --dsw-gradient-onboarding-violet-stops: #a9dbb2 33.102%, #7cc98a 50.954%, #223426 85.326%, #a9dbb2;
+  --dsw-alias-code-diff-added: #6fcf8b24;
+  --dsw-alias-code-diff-deleted: #e8776f21;
+  --dsw-alias-file-diff-added-bg: #1a2a1f;
+  --dsw-alias-file-diff-added-gutter: #17231a;
+  --dsw-alias-file-diff-added-marker: #6fcf8b;
+  --dsw-alias-file-diff-deleted-bg: #24211b;
+  --dsw-alias-file-diff-deleted-gutter: #1e1e19;
+  --dsw-alias-file-diff-deleted-marker: #e8776f;
+  --dsw-specific-input-minor: #1C2D26;
+  --dsw-alias-settings-card-fill: #1C2D26;
+  --dsw-alias-md-codeblock-background: #1C2D26;
+  --dsw-alias-settings-card-stroke: #3C5042;
+  --dsw-specific-button-primary-fill: #ACD99A;
+  --dsw-specific-button-primary-text: #141F1C;
+  --dsw-specific-chat-bubble-user-fill: #314C37;
+  --dsw-specific-user-message-fill: #314C37;
+  --atelier-bg: #141F1C;
+  --atelier-side: #192923;
+  --atelier-card: #1C2D26;
+  --atelier-ink: #E7EEDD;
+  --atelier-sub: #B5C6B8;
+  --atelier-muted: #99B2A0;
+  --atelier-brand: #ACD99A;
+  --atelier-soft: #314C37;
+  --atelier-line: #3C5042;
+  --atelier-gold: #D9C68E;
+  --atelier-shadow: 0 8px 32px #00000030;
+}
+
+body[data-ds-theme="nahida-maya"] {
+  --atelier-hero: url("./assets/skandha-game.png");
+  --atelier-badge: url("./assets/skandha-symbol.svg");
+  color: var(--atelier-ink);
+  background: var(--atelier-bg);
+  accent-color: var(--atelier-brand);
+}
+body[data-ds-theme="nahida-maya"] ::selection { background: var(--atelier-soft); color: var(--atelier-ink); }
+body[data-ds-theme="nahida-maya"] :is(button,a,input,textarea,select,[contenteditable]):focus-visible { outline: 2px solid var(--atelier-brand); outline-offset: 3px; }
+/* Actual native selectors are pinned to the inspected DSH build. */
+body[data-ds-theme="nahida-maya"] :is(._2H3hWW_root,.sidebar) {
+  background: var(--atelier-side);
+  background-image: radial-gradient(ellipse at 0 0, var(--atelier-soft), transparent 68%);
+  border-right: 1px solid var(--atelier-line);
+}
+body[data-ds-theme="nahida-maya"] :is(._2H3hWW_brandMark,.brand-mark) {
+  background: var(--atelier-badge) center / contain no-repeat;
+  width: 34px; height: 34px; flex: 0 0 34px;
+}
+body[data-ds-theme="nahida-maya"] :is(._2H3hWW_brandMark,.brand-mark) > * { visibility: hidden; }
+body[data-ds-theme="nahida-maya"] :is(._2H3hWW_newSession,.btn-new-chat) {
+  background: var(--atelier-brand); color: var(--atelier-card);
+  border: 1px solid transparent; border-radius: 12px;
+  box-shadow: 0 4px 12px color-mix(in srgb,var(--atelier-brand) 12%,transparent);
+}
+body[data-ds-theme="nahida-maya"][data-ds-dark-theme] :is(._2H3hWW_newSession,.btn-new-chat) { color: var(--atelier-bg); }
+body[data-ds-theme="nahida-maya"] :is(.Hqq-bq_stack,.empty-state) { position: relative; isolation: isolate; }
+body[data-ds-theme="nahida-maya"] .Hqq-bq_stack::before {
+  content: ""; display: block; width: 100%; height: clamp(140px,24vh,240px);
+  background: var(--atelier-hero) calc(50% - clamp(44px,6.4vh,64px)) center / auto 120% no-repeat;
+  pointer-events: none; margin: 0 auto 12px;
+  mask-image: linear-gradient(#000 83%,transparent);
+}
+body[data-ds-theme="nahida-maya"] .Hqq-bq_headline { color: var(--atelier-ink); font-size: 27px; font-weight: 600; letter-spacing: .02em; }
+body[data-ds-theme="nahida-maya"] .Hqq-bq_fishHitbox { display: none; }
+body[data-ds-theme="nahida-maya"] .Hqq-bq_previewBadge { color: var(--atelier-brand); background: var(--atelier-soft); border-color: var(--atelier-line); }
+body[data-ds-theme="nahida-maya"] :is([data-composer-card],.composer) {
+  background: var(--atelier-card);
+  border: 1px solid var(--atelier-line); border-radius: 20px;
+  box-shadow: var(--atelier-shadow); position: relative;
+}
+body[data-ds-theme="nahida-maya"] :is([data-composer-card],.composer):focus-within {
+  border-color: var(--atelier-brand);
+  box-shadow: 0 0 0 3px color-mix(in srgb,var(--atelier-brand) 9%,transparent),var(--atelier-shadow);
+}
+body[data-ds-theme="nahida-maya"] .RlGAzG_primary { background: var(--dsw-alias-button-info-fill); color: #fff; }
+body[data-ds-theme="nahida-maya"] .nahida-companion {
+  width: 100%; height: 136px; display: block;
+  background: var(--atelier-hero) calc(50% - 35px) top / auto 120% no-repeat;
+  pointer-events: none; user-select: none;
+  mask-image: linear-gradient(#000 70%,transparent);
+}
+body[data-ds-theme="nahida-maya"] .nahida-companion-wrap { display: block; width: 100%; flex-basis: 100%; min-width: 0; text-align: center; margin: 10px 0 4px; }
+body[data-ds-theme="nahida-maya"] .nahida-companion-caption { font: 10px/18px "Segoe UI",sans-serif; letter-spacing: .14em; color: var(--atelier-muted); display: block; }
+body[data-ds-theme="nahida-maya"] ._2H3hWW_footerActions:has(.nahida-companion-wrap) { flex-wrap: wrap; }
+body[data-ds-theme="nahida-maya"] ._2H3hWW_collapsed .nahida-companion-wrap { display: none; }
+/* Existing comparison skeleton consumes the same artwork and palette. */
+body[data-ds-theme="nahida-maya"] :is([data-theme-texture],[data-theme-slot="sidebar-art"],[data-theme-slot="sidebar-footer-art"],[data-theme-slot="badge-mark"],[data-theme-slot="empty-hint"],[data-theme-slot="composer-watermark"],[data-theme-slot="chat-header-art"]) { display: none; }
+body[data-ds-theme="nahida-maya"] .empty-art { display: none; }
+body[data-ds-theme="nahida-maya"] .empty-state::before,body[data-ds-theme="nahida-maya"] .empty-state::after { content: none; }
+body[data-ds-theme="nahida-maya"] [data-theme-slot="hero-art"] {
+  width: min(100%,480px); height: 260px; inline-size: min(100%,480px); block-size: 260px;
+  background: var(--atelier-hero) calc(50% - 72px) center / auto 125% no-repeat;
+  mask-image: linear-gradient(#000 83%,transparent);
+}
+body[data-ds-theme="nahida-maya"] .empty-title { color: var(--atelier-ink); }
+body[data-ds-theme="nahida-maya"] .empty-desc { color: var(--atelier-sub); max-width: 460px; }
+body[data-ds-theme="nahida-maya"] .conv-item { border: 0; box-shadow: none; color: var(--atelier-sub); border-radius: 9px; }
+body[data-ds-theme="nahida-maya"] .conv-item.is-active { background: var(--atelier-soft); color: var(--atelier-brand); }
+body[data-ds-theme="nahida-maya"] :is(.sidebar-search,.search-input,.model-pill,.chip) { background: transparent; color: var(--atelier-sub); border-color: var(--atelier-line); }
+body[data-ds-theme="nahida-maya"] .user-bubble { background: var(--atelier-soft); border: 0; color: var(--atelier-ink); }
+body[data-ds-theme="nahida-maya"] .topbar { background: var(--atelier-bg); border-color: var(--atelier-line); }
+body[data-ds-theme="nahida-maya"] .composer-wrap { background: linear-gradient(transparent,var(--atelier-bg) 30%); }
+body[data-ds-theme="nahida-maya"] :is(.tool-card,.settings-card,.detail-card) { background: var(--atelier-card); border-color: var(--atelier-line); box-shadow: none; }
+body[data-ds-theme="nahida-maya"] .md-blockquote { background: var(--atelier-soft); border-color: var(--atelier-brand); color: var(--atelier-sub); }
+body[data-ds-theme="nahida-maya"] :is(.md-pre,.detail-code) { background: var(--dsw-alias-bg-layer-1); border: 1px solid var(--atelier-line); }
+body[data-ds-theme="nahida-maya"] .send-btn { background: var(--dsw-alias-button-info-fill); color: #fff; }
+@media(max-height:760px) {
+  body[data-ds-theme="nahida-maya"] .Hqq-bq_stack::before { height: 145px; margin-bottom: 4px; }
+  body[data-ds-theme="nahida-maya"] .nahida-companion { height: 96px; }
+}
+@media(max-width:700px) {
+  body[data-ds-theme="nahida-maya"] .Hqq-bq_stack::before { height: 150px; }
+  body[data-ds-theme="nahida-maya"] .nahida-companion-wrap { display: none; }
+}
+@media(prefers-reduced-motion:reduce) {
+  body[data-ds-theme="nahida-maya"] *,body[data-ds-theme="nahida-maya"] *::before,body[data-ds-theme="nahida-maya"] *::after { animation: none !important; scroll-behavior: auto !important; }
+}
+
+/* Nahida v0.2.1: original Maya/Skandha imagery, character art, seeds and Vision. */
+body[data-ds-theme="nahida-maya"] {
+  --nh-vault: url("./assets/maya-game-background.webp");
+  --nh-pendant: url("./assets/skandha-game.png");
+  --nh-skandha: url("./assets/skandha-symbol.svg");
+  --nh-seed: url("./assets/dendro-seed.svg");
+  --nh-vision: url("./assets/sumeru-vision.webp");
+  --nh-namecard: url("./assets/nahida-namecard.webp");
+  --nh-character: url("./assets/nahida.webp");
+  --atelier-hero: var(--nh-pendant);
+  --atelier-badge: var(--nh-skandha);
+  --nh-vault-opacity: .48;
+  --nh-mist: #F9FBF2;
+}
+body[data-ds-theme="nahida-maya"][data-ds-dark-theme] { --nh-vault-opacity: .30; --nh-mist: #13271F; }
+/* Architecture fills the canvas; a local isolation context keeps it behind controls. */
+body[data-ds-theme="nahida-maya"] :is(.Dc7zOa_body:has(.Hqq-bq_root),.welcome-view) {
+  position: relative; isolation: isolate;
+  background: radial-gradient(ellipse at 50% 0%,color-mix(in srgb,var(--atelier-soft) 90%,transparent),transparent 68%),var(--atelier-bg);
+}
+body[data-ds-theme="nahida-maya"] :is(.Dc7zOa_body:has(.Hqq-bq_root),.welcome-view)::before {
+  content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
+  background: var(--nh-vault) 65% center / cover no-repeat;
+  opacity:var(--nh-vault-opacity);
+  mask-image:linear-gradient(#000 0%,#000 65%,transparent 100%);
+}
+body[data-ds-theme="nahida-maya"] :is(.Dc7zOa_body:has(.Hqq-bq_root),.welcome-view)::after {
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background: radial-gradient(ellipse 45% 28% at 50% 57%,color-mix(in srgb,var(--atelier-bg) 88%,transparent),transparent);
+}
+body[data-ds-theme="nahida-maya"] .Hqq-bq_stack::before {
+  background:var(--nh-pendant) center / contain no-repeat;
+  width:94px; height:106px!important; margin:0 auto 20px; mask-image:none;
+  filter:drop-shadow(0 0 16px color-mix(in srgb,var(--atelier-brand) 15%,transparent));
+}
+body[data-ds-theme="nahida-maya"] .Hqq-bq_headline { letter-spacing:.08em; font-weight:500; }
+body[data-ds-theme="nahida-maya"] .hero-eyebrow { letter-spacing:.24em; color:var(--atelier-gold); }
+body[data-ds-theme="nahida-maya"] .hero-copy { margin-bottom:30px; }
+body[data-ds-theme="nahida-maya"] :is(._2H3hWW_root,.sidebar) {
+  background-image:radial-gradient(ellipse at 0 0,color-mix(in srgb,var(--atelier-soft) 90%,transparent),transparent 68%);
+  border-right-color:color-mix(in srgb,var(--atelier-gold) 26%,var(--atelier-line));
+}
+body[data-ds-theme="nahida-maya"] :is(._2H3hWW_brandMark,.brand-mark) {
+  background:var(--nh-vision) left center / 200% 100% no-repeat;
+  width:36px;height:36px;flex-basis:36px;
+  filter:drop-shadow(0 2px 4px #283F251C);
+}
+body[data-ds-theme="nahida-maya"] ._2H3hWW_railMark {
+  width:28px;height:28px;
+  background:var(--nh-vision) left center / 200% 100% no-repeat;
+}
+body[data-ds-theme="nahida-maya"] ._2H3hWW_railMark>* {visibility:hidden;}
+body[data-ds-theme="nahida-maya"] .mini-mark {
+  background:var(--nh-skandha) center / 28px no-repeat;mask:none;
+}
+/* Use Skandha where the surrounding text retains the action's meaning. */
+body[data-ds-theme="nahida-maya"] :is(._2H3hWW_newSession,.btn-new-chat) {
+  border-radius:12px 4px 12px 4px;
+  border-color:color-mix(in srgb,var(--atelier-gold) 45%,transparent);
+  background:linear-gradient(110deg,var(--atelier-brand),color-mix(in srgb,var(--atelier-brand) 84%,#9AAE63));
+}
+body[data-ds-theme="nahida-maya"] :is(._2H3hWW_newSession,.btn-new-chat) svg,
+body[data-ds-theme="nahida-maya"] .session.selected>svg,
+body[data-ds-theme="nahida-maya"] .suggestions button:first-child svg {
+  background:var(--nh-skandha) center / contain no-repeat;mask:none;
+}
+body[data-ds-theme="nahida-maya"] :is(._2H3hWW_newSession,.btn-new-chat) svg>*,
+body[data-ds-theme="nahida-maya"] .session.selected>svg>*,
+body[data-ds-theme="nahida-maya"] .suggestions button:first-child svg>* { visibility:hidden; }
+body[data-ds-theme="nahida-maya"][data-ds-dark-theme] :is(._2H3hWW_newSession,.btn-new-chat) svg {filter:brightness(.45) saturate(.8);}
+body[data-ds-theme="nahida-maya"] :is([data-composer-card],.composer) {
+  background:color-mix(in srgb,var(--atelier-card) 96%,transparent);
+  border-color:color-mix(in srgb,var(--atelier-gold) 38%,var(--atelier-line));
+  border-radius:20px 6px 20px 6px;
+  box-shadow:0 10px 40px color-mix(in srgb,var(--atelier-brand) 5%,transparent),inset 0 1px 0 color-mix(in srgb,var(--atelier-gold) 10%,transparent);
+}
+body[data-ds-theme="nahida-maya"] :is([data-composer-card],.composer)::before {
+  content:"";position:absolute;right:22px;top:-28px;width:45px;height:49px;
+  background:var(--nh-seed) center / contain no-repeat;pointer-events:none;z-index:1;
+  transform:rotate(12deg);filter:drop-shadow(0 0 8px #B2D37A25);
+}
+body[data-ds-theme="nahida-maya"] :is([data-composer-card],.composer)::after {
+  content:"";position:absolute;left:18px;right:72px;top:-1px;height:1px;pointer-events:none;
+  background:linear-gradient(90deg,transparent,var(--atelier-gold),transparent);opacity:.45;
+}
+body[data-ds-theme="nahida-maya"] .RlGAzG_primary { position:relative;isolation:isolate;border-radius:12px 4px 12px 4px; }
+body[data-ds-theme="nahida-maya"] .RlGAzG_primary::before {
+  content:"";position:absolute;inset:4px;pointer-events:none;z-index:-1;
+  background:var(--nh-skandha) center / contain no-repeat;opacity:.42;
+}
+body[data-ds-theme="nahida-maya"] .RlGAzG_primary:hover:not(:disabled)::before {opacity:.36;}
+body[data-ds-theme="nahida-maya"] .nahida-companion-wrap {position:relative;padding-top:14px;margin-top:14px;}
+body[data-ds-theme="nahida-maya"] .nahida-companion-wrap::before {
+  content:"";position:absolute;inset:32px 6px 12px;pointer-events:none;
+  background:radial-gradient(ellipse at 50% 80%,color-mix(in srgb,var(--atelier-brand) 12%,transparent),transparent 65%);
+}
+body[data-ds-theme="nahida-maya"] .nahida-companion-wrap::after {
+  content:"";position:absolute;left:7%;top:88px;width:31px;height:33px;
+  background:var(--nh-skandha) center / contain no-repeat;transform:rotate(-12deg);opacity:.7;pointer-events:none;
+}
+body[data-ds-theme="nahida-maya"] .nahida-companion {
+  position:relative;height:190px!important;background:var(--nh-character) calc(50% - 44px) top / auto 115% no-repeat;
+  mask-image:linear-gradient(#000 80%,transparent);filter:drop-shadow(0 5px 6px #153A1C15);
+}
+body[data-ds-theme="nahida-maya"] .nahida-companion-caption {font-size:9px;letter-spacing:.20em;margin-top:9px;}
+body[data-ds-theme="nahida-maya"] :is(.theme-caption-nahida,#companion-caption)::after {content:"小吉祥草王";display:block;letter-spacing:.16em;font-size:10px;margin-top:2px;color:var(--atelier-sub);}
+body[data-ds-theme="nahida-maya"] .suggestions button {border-radius:8px 3px 8px 3px;background:color-mix(in srgb,var(--atelier-card) 65%,transparent);}
+body[data-ds-theme="nahida-maya"] .suggestions button:hover {border-color:var(--atelier-brand);}
+body[data-ds-theme="nahida-maya"] .thinking {border-radius:6px 2px 6px 2px;border-color:color-mix(in srgb,var(--atelier-gold) 45%,var(--atelier-line));}
+/* Character art appears in the sidebar and picker; game motifs fill the canvas. */
+body[data-ds-theme="nahida-maya"] .nahida-card {
+  background-image:linear-gradient(90deg,#F0F3E7 15%,#F0F3E7C0 55%,#F0F3E744),var(--nh-namecard);
+  background-position:center;background-size:cover;border-radius:16px 4px 16px 4px;
+}
+body[data-ds-theme="nahida-maya"] .nahida-card::before {background-image:var(--nh-character);}
+body[data-ds-theme="nahida-maya"] .chat-view {
+  background:linear-gradient(color-mix(in srgb,var(--atelier-bg) 94%,transparent),var(--atelier-bg)),var(--nh-vault) 65% top / cover no-repeat;
+}
+body[data-ds-theme="nahida-maya"] .Dc7zOa_body:not(:has(.Hqq-bq_root)) {
+  background:linear-gradient(color-mix(in srgb,var(--atelier-bg) 94%,transparent),var(--atelier-bg)),var(--nh-vault) 65% top / cover no-repeat;
+}
+body[data-ds-theme="nahida-maya"] .conversation blockquote {border-color:var(--atelier-gold);}
+body[data-ds-theme="nahida-maya"] .idea-grid article {border-radius:12px 3px 12px 3px;}
+body[data-ds-theme="nahida-maya"] [data-theme-slot="hero-art"] {background:var(--nh-pendant) center / contain no-repeat;height:115px;block-size:115px;mask-image:none;}
+@media (max-height:760px) {
+  body[data-ds-theme="nahida-maya"] .Hqq-bq_stack::before {height:76px!important;width:64px;margin-bottom:12px;}
+  body[data-ds-theme="nahida-maya"] .nahida-companion {height:122px!important;background-size:auto 115%;background-position:calc(50% - 28px) top;}
+  body[data-ds-theme="nahida-maya"] .nahida-companion-wrap {padding-top:0;margin-top:4px;}
+  body[data-ds-theme="nahida-maya"] .nahida-companion-wrap::after {top:35px;}
+  body[data-ds-theme="nahida-maya"] :is(.theme-caption-nahida,#companion-caption)::after {display:none;}
+}
+@media (max-width:700px) {
+  body[data-ds-theme="nahida-maya"] .Hqq-bq_stack::before {height:92px!important;width:78px;}
+  body[data-ds-theme="nahida-maya"] :is(.Dc7zOa_body:has(.Hqq-bq_root),.welcome-view)::before {background-size:cover;background-position:65% center;}
+  body[data-ds-theme="nahida-maya"] .Hqq-bq_headline {letter-spacing:.04em;}
+  body[data-ds-theme="nahida-maya"] :is([data-composer-card],.composer)::before {width:34px;height:39px;top:-23px;right:17px;}
+}
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  body[data-ds-theme="nahida-maya"] :is([data-composer-card],.composer):focus-within::before {animation:nh-seed-drift 4s ease-in-out infinite;}
+}
+@keyframes nh-seed-drift {0%,100%{transform:translateY(0) rotate(12deg)}50%{transform:translateY(-4px) rotate(5deg)}}

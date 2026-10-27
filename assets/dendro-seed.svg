@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 110">
+<title>草种子 · interface ornament</title>
+<defs><radialGradient id="core"><stop stop-color="#FFFFD2"/><stop offset=".5" stop-color="#E5FF96"/><stop offset="1" stop-color="#A8D765"/></radialGradient><linearGradient id="leaf" x2=".9" y2="1"><stop stop-color="#F4F6AB"/><stop offset=".5" stop-color="#B3D678"/><stop offset="1" stop-color="#5E9767"/></linearGradient></defs>
+<g stroke="#E5EAB4" stroke-width="1.8" stroke-linejoin="round">
+<path fill="url(#leaf)" d="M48 52C27 54 10 42 13 17C35 18 48 29 48 52Z"/><path fill="url(#leaf)" d="M54 47C56 23 71 10 89 12C90 34 76 49 54 47Z"/><path fill="url(#leaf)" d="M54 63C73 62 83 78 76 99C55 94 47 80 54 63Z"/>
+<path fill="none" d="m24 27 24 26m28-29L55 48m14 37L55 64" opacity=".8"/>
+</g><path d="M50 62c-3 15-14 23-24 28" fill="none" stroke="#91B571" stroke-width="2"/>
+<circle cx="51" cy="55" r="12" fill="url(#core)"/><circle cx="51" cy="55" r="5" fill="#FFFFD9"/>
+<g fill="#BDCF87"><path d="m10 65 2 5 5 2-5 2-2 5-2-5-5-2 5-2Z"/><circle cx="89" cy="60" r="2.5"/></g></svg>

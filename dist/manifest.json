@@ -1,0 +1,65 @@
+{
+  "name": "@local/dsh-theme-nahida",
+  "version": "1.0.0",
+  "defaultThemeId": "nahida-maya",
+  "themes": [
+    "nahida-maya"
+  ],
+  "colorSchemes": [
+    "light",
+    "dark"
+  ],
+  "tokens": {
+    "light": 214,
+    "dark": 214
+  },
+  "assets": [
+    {
+      "path": "./assets/skandha-game.png",
+      "bytes": 3250,
+      "sha256": "0edf469f9dcf06bdfbf3920f41941c2cc3c8bba8aff5c16daa98db4c2324d187"
+    },
+    {
+      "path": "./assets/skandha-symbol.svg",
+      "bytes": 4687,
+      "sha256": "c83bd5653d3fa46275b64942082d32f38bdc22a02ecc816b4aa79b0ee5624e2b"
+    },
+    {
+      "path": "./assets/maya-game-background.webp",
+      "bytes": 57750,
+      "sha256": "bcde417ac45f2d57813512e1cb1242f99d3f3c690cf013dee645095c45d5c61a"
+    },
+    {
+      "path": "./assets/dendro-seed.svg",
+      "bytes": 1090,
+      "sha256": "c371a5a43cbf69fca8b490bc1383f0aa03907b00a9820f2402bab56a19a12a1d"
+    },
+    {
+      "path": "./assets/sumeru-vision.webp",
+      "bytes": 25116,
+      "sha256": "1b0c85815943a037734581a368c79611d0c5a2980d558fff239e25fe5821ffb4"
+    },
+    {
+      "path": "./assets/nahida-namecard.webp",
+      "bytes": 14984,
+      "sha256": "6afaec49fd4b13ef440dd32dac08a84352443757a310005cb9fd79acb392cddb"
+    },
+    {
+      "path": "./assets/nahida.webp",
+      "bytes": 107304,
+      "sha256": "2f8043c2f8391d3929b3f000ab8a9a4f659acd77a597d5b103f5c629c4df065e"
+    }
+  ],
+  "sourceSha256": "85dda39b32f25b92609f8ac26754d8c539f980f4393f018d3f3e753bbc2cdc99",
+  "clientSha256": "30ce9f369c19422a6ce21dc2eab58d185698fdafdb66718453be699b63425104",
+  "clientBytes": 372879,
+  "sources": [
+    "src/client/00-shared.js",
+    "src/client/10-themes.js",
+    "src/client/20-styles.js",
+    "src/client/30-settings.js",
+    "src/client/40-decorations.js",
+    "src/client/50-fallback.js",
+    "src/client/99-entry.js"
+  ]
+}
